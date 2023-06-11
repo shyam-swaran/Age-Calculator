@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Poppins-thin;
+    src: url(assets/fonts/Poppins-Italic.ttf);
+  }
+  @font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/Poppins-Bold.ttf);
+  }
+  body{
+    font-family: Poppins;
+    height: 96vh;
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+  }
+  .app{
+    border-radius: 15px;
+    border-bottom-right-radius: 140px;
+    height: 360px;
+    width: 500px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.1);
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+  }
+  h5{
+    margin: 0px;
+    color: rgba(0, 0, 0,0.5);
+    font-size: 12px;
+    letter-spacing: 2px;
+    width: 140px;
+    float: left;
+    margin: auto;
+  }
+  .mon{
+    padding-right: 85px;
+  }
+  .dob{
+    height: 21px;
+  }
+  .inputs{
+    margin-top: 8px;
+  }
+  input{
+    font: Poppins;
+    font-size: 23px;
+    font-weight: bolder;
+    padding: auto;
+    padding-left: 15px;
+    margin-right: 20px;
+    border: 1px solid rgba(0, 0, 0,0.3);
+    border-radius: 3px;
+    width: 100px;
+    height: 40px;
+    outline: 0px;
+    cursor: pointer;
+  }
+  input:focus{
+    border: 1px solid hsl(259, 100%, 65%);
+  }
+  input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+  }
+  .res{
+    margin-top: 20px;
+  }
+  hr{
+    margin-top: 30px;
+    width: 400px;
+    float: left;
+    opacity: 0.3;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  h1{
+    font-style: italic;
+    margin-top: 0px;
+    line-height: 1;
+    margin-bottom: 0px;
+    font-size: 70px;
+    font-weight: 400i;
+  }
+  img{
+    width: 30px;
+  }
+  .btn{
+    float: inherit;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background-color: hsl(0, 0%, 8%);
+  }
+  span{
+    color: hsl(259, 100%, 65%);
+  }
+  .val{
+    color: hsl(259, 100%, 65%);
+  }
+  .warnings{
+    position: absolute;
+    margin-top: 0px;
+    display: flex;
+  }
+  p{
+    font-family: Poppins-thin;
+    /* border: 1px solid gray; */
+    margin: 0px;
+    font-size: small;
+    width: 142px;
+    font-size: 10px;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+  }
