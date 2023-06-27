@@ -22,6 +22,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0,0.1);
     background-color: rgb(255, 255, 255);
     align-self: center;
+    border: 1px solid black;
   }
   h5{
     margin: 0px;
@@ -31,15 +32,19 @@
     width: 140px;
     float: left;
     margin: auto;
+    border: 1px solid black;
   }
   .mon{
     padding-right: 85px;
+    border: 1px solid black;
   }
   .dob{
-    height: 21px;
+    display: flex;
+    border: 1px solid black;
   }
   .inputs{
     margin-top: 8px;
+    border: 1px solid black;
   }
   input{
     font: Poppins;
@@ -54,6 +59,7 @@
     height: 40px;
     outline: 0px;
     cursor: pointer;
+    border: 1px solid black;
   }
   input:focus{
     border: 1px solid hsl(259, 100%, 65%);
@@ -66,7 +72,7 @@
   }
   hr{
     margin-top: 30px;
-    width: 400px;
+    width: 80%;
     float: left;
     opacity: 0.3;
     padding-left: 0px;
@@ -79,6 +85,7 @@
     margin-bottom: 0px;
     font-size: 70px;
     font-weight: 400i;
+    border: 1px solid black;
   }
   img{
     width: 30px;
