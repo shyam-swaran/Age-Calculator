@@ -107,6 +107,5 @@ function calculateAge(birthDate) {
       resYear--;
       resMonth += 12;
     }  
-    console.log(currentDate,birthDate);
   }
   
