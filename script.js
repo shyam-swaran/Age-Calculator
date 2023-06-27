@@ -7,6 +7,10 @@ let dy=document.getElementById("wy");
 let dh=document.getElementById("dheader");
 let mh=document.getElementById("mheader");
 let yh=document.getElementById("yheader");
+var resYear=0;
+var resMonth=0;
+var resDay=0;
+
 date.addEventListener("input",()=>{
     if(date.value>31){
         dw.innerText="Must be a valid day";
@@ -79,10 +83,30 @@ function dateset(){
         check=true;
     }
     if(check) return;
-    let today= new Date();
-    console.log(date.value);
-    rd.innerText=Math.abs(today.getDate()-date.value);
-    rm.innerText=Math.abs(today.getMonth()-month.value);
-    ry.innerText=Math.abs(today.getFullYear()-year.value);
-    // console.log(rd);
+    const birthDate = new Date(`${month.value}-${date.value}-${year.value}`);
+    calculateAge(birthDate);
+    console.log(resYear,resMonth,resDay)
+    rd.innerText=resDay;
+    rm.innerText=resMonth;
+    ry.innerText=resYear;
 };
+function calculateAge(birthDate) {
+    const currentDate = new Date();
+    const birthYear = birthDate.getFullYear();
+    const birthMonth = birthDate.getMonth();
+    const birthDay = birthDate.getDate();
+  
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = currentDate.getMonth();
+    const currentDay = currentDate.getDate();
+  
+    resYear = currentYear - birthYear;
+    resMonth = currentMonth - birthMonth;
+    resDay = currentDay - birthDay;
+    if (resMonth < 0 || (resMonth === 0 && resDay < 0)) {
+      resYear--;
+      resMonth += 12;
+    }  
+    console.log(currentDate,birthDate);
+  }
+  
