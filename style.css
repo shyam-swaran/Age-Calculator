@@ -82,6 +82,11 @@
     font-weight: 400i;
     /* border: 1px solid black; */
   }
+  @media  screen and (max-width:720px){
+    h1{
+      font-size: 70px;
+    }
+  }
   img{
     width: 30px;
   }
