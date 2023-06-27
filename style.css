@@ -82,9 +82,9 @@
     font-weight: 400i;
     /* border: 1px solid black; */
   }
-  @media  screen and (max-width:720px){
+  @media  screen and (max-width:600px){
     h1{
-      font-size: 70px;
+      font-size: 50px;
     }
   }
   img{
@@ -109,17 +109,20 @@
     color: hsl(259, 100%, 65%);
   }
   .warnings{
-    position: absolute;
+    /* position: absolute; */
     margin-top: 0px;
     display: flex;
+    justify-content: space-between;
   }
   p{
     font-family: Poppins-thin;
     /* border: 1px solid gray; */
     margin: 0px;
     font-size: small;
-    width: 142px;
+    width: 115px;
+    height: 15px;
     font-size: 10px;
     font-style: italic;
     color: hsl(0, 100%, 67%);
+    /* border: 1px solid black; */
   }
