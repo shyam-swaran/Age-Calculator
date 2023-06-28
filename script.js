@@ -36,7 +36,7 @@ month.addEventListener("input",()=>{
 year.addEventListener("input",()=>{
     let today= new Date();
     if(year.value<1000 || year.value>9999 ){
-        dy.innerText="Must be a valid month";
+        dy.innerText="Must be a valid year";
         year.style.borderColor="hsl(0, 100%, 67%)";
         yh.style.color="hsl(0, 100%, 67%)";
     }else if(year.value>today.getFullYear()){
@@ -85,7 +85,6 @@ function dateset(){
     if(check) return;
     const birthDate = new Date(`${month.value}-${date.value}-${year.value}`);
     calculateAge(birthDate);
-    console.log(resYear,resMonth,resDay)
     rd.innerText=resDay;
     rm.innerText=resMonth;
     ry.innerText=resYear;
