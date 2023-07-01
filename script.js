@@ -64,19 +64,19 @@ function dateset(){
     let ry=document.getElementById("resyears");
     console.log(year.value);
     let check=false;
-    if(year.value==""){
+    if(year.value=="" || year.value==0){
         dy.innerText="This field is required";
         year.style.borderColor="hsl(0, 100%, 67%)";
         yh.style.color="hsl(0, 100%, 67%)";
         check=true;
     }
-    if(month.value==""){
+    if(month.value=="" || month.value==0){
         dm.innerText="This field is required";
         month.style.borderColor="hsl(0, 100%, 67%)";
         mh.style.color="hsl(0, 100%, 67%)";
         check=true;
     }
-    if(date.value==""){
+    if(date.value=="" || date.value==0){
         dw.innerText="This field is required";
         date.style.borderColor="hsl(0, 100%, 67%)";
         dh.style.color="hsl(0, 100%, 67%)";
@@ -100,8 +100,8 @@ function calculateAge(birthDate) {
     const currentDay = currentDate.getDate();
   
     resYear =Math.abs(currentYear - birthYear);
-    resMonth =Math.abs( currentMonth - birthMonth);
-    resDay =Math.abs( currentDay - birthDay);
+    resMonth =Math.abs(currentMonth - birthMonth);
+    resDay =Math.abs(currentDay - birthDay);
     if (resMonth < 0 || (resMonth === 0 && resDay < 0)) {
       resYear--;
       resMonth += 12;
