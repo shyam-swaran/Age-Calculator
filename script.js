@@ -99,9 +99,9 @@ function calculateAge(birthDate) {
     const currentMonth = currentDate.getMonth();
     const currentDay = currentDate.getDate();
   
-    resYear = currentYear - birthYear;
-    resMonth = currentMonth - birthMonth;
-    resDay = currentDay - birthDay;
+    resYear =Math.abs(currentYear - birthYear);
+    resMonth =Math.abs( currentMonth - birthMonth);
+    resDay =Math.abs( currentDay - birthDay);
     if (resMonth < 0 || (resMonth === 0 && resDay < 0)) {
       resYear--;
       resMonth += 12;
